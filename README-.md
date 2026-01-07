@@ -1,1 +1,0 @@
-# tugaytulgar.github.io
