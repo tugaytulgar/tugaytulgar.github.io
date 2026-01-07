@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tugay Tulgar | Web Sitesi & IT Çözümleri</title>
+  <meta name="description" content="KOBİ’ler için hızlı, mobil uyumlu tanıtım siteleri. Tasarım, geliştirme, yayına alma ve destek." />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#121a33; --muted:#a9b3d1; --text:#eef2ff;
+      --line:rgba(255,255,255,.10); --accent:#6ee7ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:radial-gradient(1200px 700px at 20% -10%, rgba(110,231,255,.18), transparent 60%),
+                 radial-gradient(900px 500px at 80% 10%, rgba(99,102,241,.18), transparent 55%),
+                 var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 16px 56px}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .brand{font-weight:700; letter-spacing:.2px}
+    .nav a{opacity:.9; text-decoration:none; margin-left:14px}
+    .nav a:hover{opacity:1; text-decoration:underline}
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:18px; margin-top:28px}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:18px; padding:22px;
+      box-shadow:0 16px 40px rgba(0,0,0,.25);
+    }
+    h1{font-size:42px; line-height:1.1; margin:0 0 10px}
+    p{margin:0 0 12px; color:var(--muted)}
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:12px; border:1px solid var(--line);
+      text-decoration:none; font-weight:600;
+      background:rgba(255,255,255,.03);
+    }
+    .btn.primary{border-color:rgba(110,231,255,.45); box-shadow:0 0 0 4px rgba(110,231,255,.10) inset}
+    .pill{display:inline-flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .tag{
+      padding:6px 10px; border-radius:999px;
+      border:1px solid var(--line); background:rgba(255,255,255,.03);
+      color:var(--muted); font-size:13px;
+    }
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+    h2{margin:0 0 10px; font-size:22px}
+    .kpi{display:flex; gap:14px; flex-wrap:wrap; margin-top:8px}
+    .kpi div{padding:10px 12px; border-radius:14px; border:1px solid var(--line); background:rgba(255,255,255,.02)}
+    .kpi b{display:block; color:var(--text)}
+    .kpi span{color:var(--muted); font-size:13px}
+    .section{margin-top:18px}
+    ol{margin:10px 0 0 18px; color:var(--muted)}
+    li{margin:8px 0}
+    .demo-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px}
+    .demo h3{margin:0 0 6px}
+    .demo p{margin:0 0 10px}
+    .foot{margin-top:16px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; color:var(--muted); font-size:13px}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .demo-grid{grid-template-columns:1fr}
+      h1{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">Tugay Tulgar</div>
+      <div>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#surec">Süreç</a>
+        <a href="#ornekler">Örnekler</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="card">
+        <h1>Hızlı, şık ve mobil uyumlu<br/>tanıtım siteleri.</h1>
+        <p>KOBİ’ler için tasarım → geliştirme → yayına alma → teslim sürecini uçtan uca yönetiyorum.
+           Hedef: net bir mesaj, güven veren bir görünüm ve ölçülebilir dönüşüm.</p>
+
+        <div class="cta">
+          <a class="btn primary" href="#ornekler">Örnek siteleri gör</a>
+          <a class="btn" href="#iletisim">Teklif iste</a>
+        </div>
+
+        <div class="pill">
+          <span class="tag">GitHub Pages demo</span>
+          <span class="tag">Natro yayına alma</span>
+          <span class="tag">Temel SEO</span>
+          <span class="tag">Bakım & Destek</span>
+        </div>
+
+        <div class="kpi">
+          <div><b>5–8 sayfa</b><span>Tanıtım sitesi</span></div>
+          <div><b>2 tasarım varyasyonu</b><span>Seçim kolaylığı</span></div>
+          <div><b>Yayın + teslim</b><span>Operasyon dahil</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Hızlı Tanım</h2>
+        <p><b>Ben kimim?</b> IT altyapı ve operasyon tecrübesiyle, web tarafında güvenli ve düzenli teslimat yapan bir uygulayıcıyım.</p>
+        <p><b>Ne sunuyorum?</b> Tanıtım sitesi, landing page, içerik yerleşimi, temel SEO ve yayına alma.</p>
+        <p><b>Nasıl çalışıyorum?</b> Kapsamı netleştirir, kısa bir plan çıkarır, tasarım varyasyonu sunar, yayına alır ve teslim ederim.</p>
+
+        <div class="section">
+          <h2>Çalışma prensibi</h2>
+          <ol>
+            <li>Kapsam netliği: sayfa yapısı + içerik sorumluluğu</li>
+            <li>Revizyon disiplini: tasarım 2 tur, içerik 1 tur</li>
+            <li>Teslim standardı: SSL/HTTPS + test + yedek + doküman</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div id="hizmetler" class="section card">
+      <h2>Hizmetler</h2>
+      <div class="grid">
+        <div class="card">
+          <h2>Tanıtım Sitesi</h2>
+          <p>Kurumsal vitrin, hizmetler, referanslar, iletişim, galeri gibi sayfalar.</p>
+          <p class="mono">HTML/CSS/JS veya WordPress (ihtiyaca göre)</p>
+        </div>
+        <div class="card">
+          <h2>Yayına Alma</h2>
+          <p>Domain/hosting/DNS/SSL kurulumları, yönlendirmeler ve temel testler.</p>
+          <p class="mono">Natro + SSL/HTTPS</p>
+        </div>
+        <div class="card">
+          <h2>Bakım & Destek</h2>
+          <p>Güncelleme, yedek, küçük içerik değişiklikleri ve teknik takip.</p>
+          <p class="mono">Opsiyonel aylık paket</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="surec" class="section card">
+      <h2>Süreç</h2>
+      <ol>
+        <li><b>Keşif:</b> İş hedefi, sayfa yapısı, içerik listesi</li>
+        <li><b>Tasarım:</b> 1 tasarım yönü + 2 varyasyon</li>
+        <li><b>Geliştirme:</b> Mobil uyum + içerik yerleşimi + test</li>
+        <li><b>Go-live:</b> HTTPS/SSL + yönlendirme + son kontrol + teslim</li>
+      </ol>
+    </div>
+
+    <div id="ornekler" class="section card">
+      <h2>Örnek Siteler (Demo)</h2>
+      <p>Bu alanı, sektörel demoları yayınladıkça linklerle dolduracağız.</p>
+
+      <div class="demo-grid">
+        <div class="card demo">
+          <h3>Sanayi / Üretim</h3>
+          <p>Kurumsal tanıtım + hizmetler + referanslar + iletişim.</p>
+          <a class="btn" href="#" onclick="alert('Demo linkini ekleyince burada açılacak.'); return false;">Canlı demo</a>
+        </div>
+        <div class="card demo">
+          <h3>Restoran / Kafe</h3>
+          <p>Menü, galeri, konum, rezervasyon/WhatsApp aksiyonu.</p>
+          <a class="btn" href="#" onclick="alert('Demo linkini ekleyince burada açılacak.'); return false;">Canlı demo</a>
+        </div>
+        <div class="card demo">
+          <h3>Danışmanlık</h3>
+          <p>Hizmet paketleri, vaka örnekleri, teklif formu.</p>
+          <a class="btn" href="#" onclick="alert('Demo linkini ekleyince burada açılacak.'); return false;">Canlı demo</a>
+        </div>
+        <div class="card demo">
+          <h3>Gayrimenkul</h3>
+          <p>İlan kartları, filtre, detay sayfası, iletişim CTA.</p>
+          <a class="btn" href="#" onclick="alert('Demo linkini ekleyince burada açılacak.'); return false;">Canlı demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="iletisim" class="section card">
+      <h2>İletişim</h2>
+      <p>İstersen kısa bir ihtiyaç notu bırak; aynı gün içinde çerçeve teklif paylaşabilirim.</p>
+      <ul style="color:var(--muted); margin:10px 0 0 18px">
+        <li>E-posta: <a href="mailto:mail@ornek.com">mail@ornek.com</a></li>
+        <li>WhatsApp: <a href="https://wa.me/90XXXXXXXXXX">wa.me/90XXXXXXXXXX</a></li>
+        <li>GitHub: <a href="https://github.com/tugaytulgar">github.com/tugaytulgar</a></li>
+      </ul>
+      <p style="margin-top:10px; color:var(--muted)"><b>Not:</b> Mail/WhatsApp alanlarını kendi bilgilerinle güncelle.</p>
+    </div>
+
+    <div class="foot">
+      <div>© <span id="y"></span> Tugay Tulgar</div>
+      <div class="mono">Yayın: GitHub Pages</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
